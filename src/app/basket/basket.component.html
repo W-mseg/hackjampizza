@@ -1,0 +1,6 @@
+<div class="userBasketDiv">Basket
+  <div class="basketPrice">
+    <p *ngIf="basketService.totalAmount < 200">{{amount | currency:'EUR': 'symbol':'1.2-2'}}</p>
+    <span *ngIf="basketService.totalAmount > 200"> Price Limit exceeded !</span>
+  </div>
+</div>
